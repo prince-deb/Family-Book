@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>
+        Family Book
+    </title>
+</head>
+<body>
+    <div>
+        <p>
+            MY FAMILY BOOK
+        </p>
+        <img id="photo" src="Father.jpg">
+        <br>
+        <label id="Name_Display">Basu Ranjan Deb</label>
+        <br>
+        <br>
+        <button id="next_button" onclick="next_member()">Next</button>
+    </div>
+</body>
+<script>
+    
+    var names=["Basu Ranjan Deb","Supriya Deb","Sabyasachi Deb"];
+        
+        var images=["Father.jpg","mother.png","son.jpg"];
+        
+        var i=0;
+        function next_member(){
+                document.getElementById("photo").src=images[i];
+                document.getElementById("Name_Display").innerHTML=names[i];
+                i++;
+
+                if(i == 3)
+                {
+                    i=0;
+                }
+        }
+
+    
+    </script>
+</html>
